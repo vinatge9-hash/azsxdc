@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Coffee | Warm Artisan Coffee</title>
+  <meta name='description' content='Niyantri Coffee — a warm, modern coffee shop inspired by artisan culture in Hyderabad. Menu, hours, study-friendly vibe, online ordering, events.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'serif': ['Georgia', 'Cambria', 'Times', 'serif'],
+          'sans': ['Inter', 'ui-sans-serif', 'system-ui']
+        }
+      }
+    }
+  </script>
+</head>
+<body class='min-h-screen bg-white text-gray-900 opacity-0 transition-opacity duration-700'>
+  <!-- Header / Navigation -->
+  <header class='bg-white/80 backdrop-blur-md sticky top-0 z-40'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-2xl font-semibold'>Niyantri Coffee</span>
+        </a>
+        <div class='md:hidden'>
+          <button id='menu-btn' aria-label='Open menu' class='inline-flex items-center justify-center p-2 rounded-full bg-amber-100 hover:bg-amber-200 transition-all duration-300'>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700'></span>
+          </button>
+        </div>
+        <div id='menu' class='hidden md:flex space-x-6'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Home</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Menu</a>
+          <a href='hours.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Hours</a>
+          <a href='online-ordering.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Online Ordering</a>
+          <a href='events.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Events</a>
+          <a href='location.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Location</a>
+          <a href='loyalty.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Loyalty</a>
+          <a href='reservations.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Reservations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class='relative min-h-screen flex items-center justify-center bg-amber-50'>
+    <img src="https://pixabay.com/get/g2f17b82706c5cdee043fd661f09eb0d02ed40bd750c7323d06fbb2f70ac74df999dcb77493db5250d32408a4a3a3096a51c77728e1d14aab1cac6c346ec87638_640.jpg" alt='Cozy coffee shop interior' class='absolute inset-0 w-full h-full object-cover blur-sm saturate-110'>
+    <div class='absolute inset-0 bg-gradient-to-r from-amber-50/80 via-amber-100/70 to-amber-50/70'></div>
+    <div class='relative z-10 max-w-2xl text-center px-4'>
+      <h1 class='text-4xl md:text-6xl font-serif font-bold leading-tight text-gray-900'>
+        <span class='block'>Niyantri</span>
+        <span class='block text-amber-700'>Coffee</span>
+      </h1>
+      <p class='mt-4 text-lg md:text-xl text-gray-700'>A warm, modern coffee haven for study, connection, and creativity. Handcrafted brews, artisan vibes, and a cozy atmosphere.</p>
+      <div class='mt-8 flex flex-wrap justify-center gap-4'>
+        <a href='menu.html' class='inline-block px-6 py-3 rounded-full bg-amber-600 text-white font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105'>Explore Menu</a>
+        <a href='location.html' class='inline-block px-6 py-3 rounded-full bg-amber-100 text-amber-900 font-semibold border border-amber-200 transition-all duration-300 hover:brightness-110 hover:scale-105'>Find Location</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Homepage) -->
+  <section id='testimonials' class='py-16 bg-white'>
+    <div class='max-w-6xl mx-auto px-4'>
+      <span class='inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-sm font-semibold'>Testimonials</span>
+      <h2 class='mt-2 text-3xl font-serif font-semibold'>What Our Friends Say</h2>
+      <div class='mt-8 grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <!-- Card 1 -->
+        <article class='bg-white rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center mb-3'>
+            <span class='inline-flex items-center'>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+            </span>
+          </div>
+          <p class='text-gray-700 italic'>&ldquo;An ideal study spot with excellent coffee and a calm vibe.&rdquo;</p>
+          <div class='mt-3 font-semibold'>Aanya P.</div>
+          <div class='text-sm text-gray-500'>Hyderabad, India</div>
+        </article>
+        <!-- Card 2 -->
+        <article class='bg-white rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center mb-3'>
+            <span class='inline-flex'>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+            </span>
+          </div>
+          <p class='text-gray-700 italic'>&ldquo;The perfect blend of productivity and cozy atmosphere.&rdquo;</p>
+          <div class='mt-3 font-semibold'>Rohit N.</div>
+          <div class='text-sm text-gray-500'>Hyderabad</div>
+        </article>
+        <!-- Card 3 -->
+        <article class='bg-white rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center mb-3'>
+            <span class='inline-flex'>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+              <svg width='16' height='16' viewBox='0 0 24 24' fill='currentColor' class='text-yellow-500'>
+                <path d='M12 17.3l6.18 3.73-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.6L5.82 20.9z'/>
+              </svg>
+            </span>
+          </div>
+          <p class='text-gray-700 italic'>&ldquo;Always warm, always delicious.&rdquo;</p>
+          <div class='mt-3 font-semibold'>Meera S.</div>
+          <div class='text-sm text-gray-500'>Secunderabad</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div>
+        <h3 class='text-xl font-semibold font-serif'>Niyantri Coffee</h3>
+        <p class='mt-2 text-sm'>A warm, artisan coffee experience in the heart of Hyderabad.</p>
+        <div class='flex space-x-3 mt-3'>
+          <a href='#' aria-label='Instagram' class='hover:opacity-90 transition-all duration-300'>IG</a>
+          <a href='#' aria-label='Facebook' class='hover:opacity-90 transition-all duration-300'>FB</a>
+          <a href='#' aria-label='Twitter' class='hover:opacity-90 transition-all duration-300'>X</a>
+        </div>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold'>Quick Links</h4>
+        <ul class='mt-2 space-y-2'>
+          <li><a href='menu.html' class='hover:underline transition-all duration-300'>Menu</a></li>
+          <li><a href='hours.html' class='hover:underline transition-all duration-300'>Hours</a></li>
+          <li><a href='location.html' class='hover:underline transition-all duration-300'>Location</a></li>
+          <li><a href='events.html' class='hover:underline transition-all duration-300'>Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold'>Newsletter</h4>
+        <p class='mt-2 text-sm'>Get the latest brews and events in your inbox.</p>
+        <form class='mt-2 flex'>
+          <input type='email' placeholder='Your email' class='w-full rounded-l-lg px-3 py-2 bg-white text-gray-900' aria-label='Email'>
+          <button class='px-4 py-2 bg-amber-600 text-white rounded-r-lg transition-all duration-300 hover:brightness-110'>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class='border-gray-800'>
+    <p class='text-center py-4 text-sm'>© 2025 Niyantri Coffee. All rights reserved. Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    // body fade-in
+    window.addEventListener('load', function(){ document.body.style.opacity = '1'; });
+
+    // mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn?.addEventListener('click', function(){
+      menu.classList.toggle('hidden');
+      btn.classList.toggle('open');
+    });
+
+    // simple scroll reveal for sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => { sec.style.opacity = '0'; sec.style.transform = 'translateY(20px)'; sec.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out'; });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting){ e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+      });
+    }, {threshold:0.15});
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
