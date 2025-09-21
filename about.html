@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>About Niyantri Coffee</title>
+  <meta name='description' content='Learn the story behind Niyantri Coffee, our artisan approach, and our warm, study-friendly space in Hyderabad.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    tailwind.config = { theme: { fontFamily: { 'serif': ['Georgia','Cambria','Times','serif'], 'sans': ['Inter','ui-sans-serif','system-ui'] } } }
+  </script>
+</head>
+<body class='min-h-screen bg-white text-gray-900 opacity-0 transition-opacity duration-700'>
+  <header class='bg-white/80 backdrop-blur-md sticky top-0 z-40'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-2xl font-semibold'>Niyantri Coffee</span>
+        </a>
+        <div class='md:hidden'>
+          <button id='menu-btn' aria-label='Open menu' class='inline-flex items-center justify-center p-2 rounded-full bg-amber-100 hover:bg-amber-200 transition-all duration-300'>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700'></span>
+          </button>
+        </div>
+        <div id='menu' class='hidden md:flex space-x-6'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Home</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Menu</a>
+          <a href='hours.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Hours</a>
+          <a href='online-ordering.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Online Ordering</a>
+          <a href='events.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Events</a>
+          <a href='location.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Location</a>
+          <a href='loyalty.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Loyalty</a>
+          <a href='reservations.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Reservations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class='max-w-5xl mx-auto px-4 py-12'>
+    <section class='mb-12'>
+      <h1 class='font-serif text-4xl md:text-5xl font-bold mb-3'>Our Story</h1>
+      <p class='text-lg text-gray-700'>Niyantri Coffee began as a tiny, sunlit corner in Hyderabad where baristas crafted each cup with patience and care. We draw inspiration from artisan coffee culture—slow, thoughtful, and beautifully imperfect. Our space blends warm browns, creams, and gold accents to create a sanctuary where students can focus, connect, and dream a little bigger over a perfect pour.</p>
+    </section>
+
+    <section class='mb-12'>
+      <h2 class='font-serif text-3xl mb-4'>Our Craft</h2>
+      <p class='text-gray-700'>We source ethically, roast in small batches, and design every element—from furniture to typography—to invite calm, focus, and delight. Expect a study-friendly vibe with soft lighting, cozy seating, and a soundtrack that whispers, not shouts.</p>
+      <div class='mt-4'>
+        <img src="https://images.unsplash.com/photo-1631875653145-21a74ad21c38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxjbG9zZS11cCUyMG9mJTIwYSUyMGhhbmQlMjBwb3VyaW5nJTIwbGF0dGUlMjBhcnQlMjBpbiUyMGElMjBjZXJhbWljJTIwY3VwJTJDJTIwd2FybSUyMHRvbmVzJTJDJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3NTg0NjUwNDR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Latte art in warm cafe' class='rounded-lg shadow-md w-full'>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div>
+        <h3 class='font-serif text-xl'>Niyantri Coffee</h3>
+        <p class='text-sm mt-2'>A warm, artisan coffee experience in Hyderabad.</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold'>Location</h4>
+        <p class='text-sm'>Hyderabad, Telangana, India</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold'>Newsletter</h4>
+        <form class='mt-2 flex'>
+          <input type='email' placeholder='Your email' class='w-full rounded-l-lg px-3 py-2 bg-white text-gray-900' aria-label='Email'>
+          <button class='px-4 py-2 bg-amber-600 text-white rounded-r-lg transition-all duration-300 hover:brightness-110'>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class='border-gray-800'>
+    <p class='text-center py-4 text-sm'>© 2025 Niyantri Coffee. All rights reserved. Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', function(){ document.body.style.opacity = '1'; });
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn?.addEventListener('click', function(){ menu.classList.toggle('hidden'); btn.classList.toggle('open'); });
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => { sec.style.opacity = '0'; sec.style.transform = 'translateY(20px)'; sec.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out'; });
+    const observer = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } }); }, {threshold:0.15});
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
