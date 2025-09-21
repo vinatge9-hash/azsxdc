@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Contact - Niyantri Coffee</title>
+  <meta name='description' content='Get in touch with Niyantri Coffee in Hyderabad. We value student-focused feedback and community events.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='min-h-screen bg-white text-gray-900 opacity-0 transition-opacity duration-700'>
+  <header class='bg-white/80 backdrop-blur-md sticky top-0 z-40'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-2xl font-semibold'>Niyantri Coffee</span>
+        </a>
+        <div class='md:hidden'>
+          <button id='menu-btn' aria-label='Open menu' class='inline-flex items-center justify-center p-2 rounded-full bg-amber-100 hover:bg-amber-200 transition-all duration-300'>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700 mb-1 transition-all duration-300'></span>
+            <span class='block w-6 h-0.5 bg-yellow-700'></span>
+          </button>
+        </div>
+        <div id='menu' class='hidden md:flex space-x-6'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Home</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Menu</a>
+          <a href='hours.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Hours</a>
+          <a href='location.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Location</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-4xl mx-auto px-4 py-12'>
+    <h1 class='font-serif text-3xl md:text-4xl mb-4'>Get in Touch</h1>
+    <p class='text-gray-700 mb-6'>We’d love to hear from you. Reach out for questions, collaborations, or to share your study-space needs at Niyantri Coffee.</p>
+    <form class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <input class='rounded-md p-3 border border-gray-300' placeholder='Your name' aria-label='Name'>
+      <input class='rounded-md p-3 border border-gray-300' placeholder='Your email' aria-label='Email'>
+      <textarea class='md:col-span-2 rounded-md p-3 border border-gray-300' rows='6' placeholder='Your message' aria-label='Message'></textarea>
+    </form>
+    <div class='mt-4'>
+      <button class='px-6 py-3 rounded-full bg-amber-600 text-white transition-all duration-300 hover:brightness-110'>Send Message</button>
+    </div>
+    <section class='mt-12'>
+      <h2 class='font-serif text-2xl mb-2'>Visit Us</h2>
+      <p class='text-gray-700'>Niyantri Coffee, Hyderabad, Telangana, India.</p>
+      <p class='text-sm text-gray-500'>Hours, locations, and events available on other pages.</p>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-4 py-8'>
+      <p class='text-center text-sm'>© 2025 Niyantri Coffee. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('load', function(){ document.body.style.opacity = '1'; });
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn?.addEventListener('click', function(){ menu.classList.toggle('hidden'); btn.classList.toggle('open'); });
+  </script>
+</body>
+</html>
